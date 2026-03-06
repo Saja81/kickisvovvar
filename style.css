@@ -14,24 +14,67 @@ body {
 
 /* Navigation */
 nav {
+  position: relative;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 0.5rem 1rem;
 }
 
-nav ul {
+/* Standard länkar */
+.nav-links {
   list-style: none;
+  display: flex;
+  gap: 1rem;
   margin: 0;
   padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
 }
 
-nav a {
+.nav-links a {
   text-decoration: none;
   font-weight: bold;
   transition: color 0.3s;
 }
 
+/* Hamburger knapp */
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Mobilanpassning */
+@media (max-width: 1200px) {
+  .hamburger {
+    display: block;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 100%;
+    background-color: #ffffff;
+    display: none; /* gömd som standard */
+    padding: 1rem 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav-links li {
+    margin: 0;
+    text-align: center;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+}
 /* Hero-sektion */
 
 /* Hero-sektion med endast bild */
