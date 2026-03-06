@@ -2,13 +2,73 @@
 <html lang="sv">
   <head>
     <meta charset="UTF-8" />
-    <title>Vovvar</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kickis Vovvar i Rumänien</title>
     <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
   </head>
   <body>
-    <h1>Vovvar sidan 🐶</h1>
-    <p>Test</p>
+    <!-- Hero-sektion -->
+    <header class="hero">
+      <div class="hero-content"></div>
+    </header>
 
-    <script src="script.js"></script>
+    <!-- Navigation -->
+    <nav>
+      <ul>
+        <li><a href="#">Hem</a></li>
+        <li><a href="#">Om oss</a></li>
+        <li><a href="#adoptera">Adoptera</a></li>
+        <li><a href="#">Kontakt</a></li>
+      </ul>
+    </nav>
+
+    <!-- Main content -->
+    <main>
+      <!-- Nyheter -->
+      <section class="section-light">
+        <h2>Nyheter</h2>
+        <div class="card-container">
+          <article class="card">
+            <h3>Senaste adoptioner</h3>
+            <p>Se vilka hundar som nyligen har fått nya hem.</p>
+            <a href="#" class="cta">Läs mer</a>
+          </article>
+          <article class="card">
+            <h3>Evenemang & insamlingar</h3>
+            <p>Delta i träffar och insamlingar för att hjälpa fler hundar.</p>
+            <a href="#" class="cta">Delta eller stöd</a>
+          </article>
+        </div>
+      </section>
+
+      <!-- Blogg / Tips -->
+      <section class="section-dark">
+        <h2>Blogg & Tips</h2>
+        <div class="card-container">
+          <article class="card">
+            <h3>Förberedelser inför adoption</h3>
+            <p>Tips för dig som vill adoptera en hund från Rumänien.</p>
+            <a href="#" class="cta">Läs mer</a>
+          </article>
+          <article class="card">
+            <h3>Vård & omsorg</h3>
+            <p>Lär dig om hur du tar hand om din nya fyrbenta vän.</p>
+            <a href="#" class="cta">Läs mer</a>
+          </article>
+        </div>
+      </section>
+
+      <!-- Adoptera CTA -->
+      <section id="adoptera" class="section-light">
+        <h2>Vill du ge en hund ett nytt hem?</h2>
+        <p>Vi hjälper dig genom hela processen för adoption från Rumänien.</p>
+        <a href="#" class="cta-large">Starta adoptionen</a>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 Kickis Vovvar i Rumänien</p>
+    </footer>
   </body>
 </html>
