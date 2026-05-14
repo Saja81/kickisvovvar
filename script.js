@@ -1,10 +1,3 @@
-const check = document.getElementById("costCheck");
-const button = document.getElementById("submitBtn");
-
-check.addEventListener("change", function () {
-  button.disabled = !this.checked;
-});
-
 console.log("Vovvar site startad");
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -16,4 +9,13 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-const form = document.getElementById("interestForm");
+document.addEventListener("DOMContentLoaded", () => {
+  const check = document.getElementById("costCheck");
+  const button = document.getElementById("submitBtn");
+
+  if (check && button) {
+    check.addEventListener("change", function () {
+      button.disabled = !this.checked;
+    });
+  }
+});
