@@ -17,10 +17,3 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 const form = document.getElementById("interestForm");
-
-if (form) {
-  form.addEventListener("submit", function (e) {
-    e.preventDefault(); // stoppar "riktig" submit
-    window.location.href = "bekraftelse.html";
-  });
-}
