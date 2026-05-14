@@ -455,6 +455,58 @@ section blockquote {
   line-height: 1.5;
 }
 
+/* Intresseanmälan */
+.interest-form-section {
+  max-width: 700px;
+  margin: 4rem auto;
+  padding: 2rem;
+}
+
+#interestForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#interestForm input,
+#interestForm textarea {
+  width: 100%;
+  padding: 0.9rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: inherit;
+  box-sizing: border-box;
+}
+
+.checkbox-wrap {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  margin-top: 1rem;
+}
+
+.checkbox-wrap input {
+  width: auto;
+}
+
+#submitBtn {
+  margin-top: 1rem;
+  padding: 1rem;
+  background: #d46a6a;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+#submitBtn:disabled {
+  background: #bbb;
+  cursor: not-allowed;
+}
+
 /* Responsivitet */
 @media (max-width: 768px) {
   .dog-hero {

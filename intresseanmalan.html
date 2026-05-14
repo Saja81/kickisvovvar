@@ -44,7 +44,47 @@
     </nav>
 
     <!-- Main content -->
-    <main></main>
+    <main>
+      <section class="interest-form-section">
+        <div class="container">
+          <h2>Intresseanmälan</h2>
+
+          <form
+            name="intresseanmalan"
+            method="POST"
+            data-netlify="true"
+            id="interestForm"
+          >
+            <input type="hidden" name="form-name" value="intresseanmalan" />
+            <input type="hidden" name="redirect" value="/bekraftelse.html" />
+
+            <label>Hundens namn</label>
+            <input type="text" name="hund" required />
+
+            <label>Sökandes namn</label>
+            <input type="text" name="namn" required />
+
+            <label>Sökandes telefonnummer</label>
+            <input type="tel" name="telefon" required />
+
+            <label>Sökandes e-post</label>
+            <input type="email" name="epost" required />
+
+            <label>Berätta om ditt intresse</label>
+            <textarea name="meddelande" rows="6" required></textarea>
+
+            <div class="checkbox-wrap">
+              <input type="checkbox" id="costCheck" />
+              <label for="costCheck">
+                Jag är medveten om att adoptionskostnaden är 7000:-
+              </label>
+            </div>
+
+            <button type="submit" id="submitBtn" disabled>Skicka in</button>
+          </form>
+        </div>
+      </section>
+    </main>
 
     <footer>
       <p>&copy; 2026 Kickis Vovvar i Rumänien</p>
