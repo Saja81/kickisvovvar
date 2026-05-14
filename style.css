@@ -279,6 +279,21 @@ section blockquote {
 }
 
 /* Story card */
+.read-more-btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+  background: #d46a6a;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.read-more-btn:hover {
+  background: #b85252;
+}
 .story-card {
   max-width: 900px;
   margin: 2rem auto;
